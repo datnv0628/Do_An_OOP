@@ -1,0 +1,14 @@
+App quản lý nhà trọ
+
+- Xem, thêm, sửa, xóa phòng trọ (mã phòng, số phòng, diện tích, giá thuê, trạng thái)
+- Xem, thêm, sửa, xóa người thuê (cccd, mã phòng, mã hợp đồng, họ và tên, giới tinhs,biển số xe ( hoặc null), SĐT)
+- Xem, thêm, sửa, xóa hợp đồng (mã hợp đồng, ngày bắt đầu thuê, ngày kết thúc, phòng, họ và tên người thuê)
+- Xem, thêm, sửa, xóa hóa đơn(mã hóa đơn, mã phòng, tiền phòng, tiền điện, tháng, tiền nước, phí dịch vụ, phí gửi xe, tổng tiền, trạng thái)
+- Lọc phòng (phòng trống)
+- Lọc hóa đơn ( trạng thái chưa đóng )
+- Tìm kiếm theo tên, biển số, số phòng, hóa đơn, SĐT, cccd
+
+Kế thừa
+
+Phòng ---> Phòng có gác và Phòng không gác
+Người ---> Khách Thuê và nhân viên
