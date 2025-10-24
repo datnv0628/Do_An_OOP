@@ -6,7 +6,7 @@ public abstract class Phong {
     private HopDong hopDong;
     private KhachThue nguoiDungTen;
 
-    public Phong(String maPhong, Double giaThue, HopDong hopDong, KhachThue nguoiDungTen){
+    public Phong(String maPhong, Double giaThue, HopDong hopDong, KhachThue nguoiDungTen) {
         this.maPhong = maPhong;
         this.giaThue = giaThue;
         this.hopDong = hopDong;
@@ -15,20 +15,23 @@ public abstract class Phong {
 
     public abstract String loaiPhong();
 
-    public String getMaPhong(){
+    public String getMaPhong() {
         return maPhong;
     }
 
-    public Double getGiaThue(){
+    public Double getGiaThue() {
         return giaThue;
     }
-    
-    public String getLoaiPhong(){
+
+    public String getLoaiPhong() {
         return loaiPhong();
     }
 
-    public KhachThue getNguoiDungTen(){
-        return nguoiDungTen;
+    public void getNguoiDungTen() {
+        System.out.println("Ten khach hang: " + nguoiDungTen.getTen());
+        System.out.println("sdt: " + nguoiDungTen.getSdt());
+        if (nguoiDungTen.getXe()) {
+            System.out.println("Bien so xe: " + nguoiDungTen.getBienSoXe());
+        }
     }
-
 }
