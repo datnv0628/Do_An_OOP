@@ -1,41 +1,31 @@
 package src.model;
 
-public interface IHienThi { // dòng này mới thêm
-    void hienThi();         // dòng này mới thêm
-}
-
-public abstract class Phong implements IHienThi { //dòng này mới thêm
+public abstract class Phong {
     private String maPhong;
     private Double giaThue;
     private HopDong hopDong;
     private KhachThue nguoiDungTen;
+    private Boolean trangThai = false;
 
-    public Phong(String maPhong, Double giaThue, HopDong hopDong, KhachThue nguoiDungTen) {
+    public Phong(String maPhong, Double giaThue, HopDong hopDong, Boolean trangThai, KhachThue nguoiDungTen) {
         this.maPhong = maPhong;
         this.giaThue = giaThue;
         this.hopDong = hopDong;
+        this.trangThai = trangThai;
         this.nguoiDungTen = nguoiDungTen;
     }
 
     public abstract String loaiPhong();
 
-    public String getMaPhong() {
-        return maPhong;
-    }
+    public String getMaPhong() { return maPhong; }
+    public Double getGiaThue() { return giaThue; }
+    public String getLoaiPhong() { return loaiPhong(); }
+    public KhachThue getNguoiDungTen() { return nguoiDungTen; }
+    public Boolean getTrangThai() { return trangThai; }
+    public HopDong getHopDong() { return hopDong; }
 
-    public Double getGiaThue() {
-        return giaThue;
-    }
-
-    public String getLoaiPhong() {
-        return loaiPhong();
-    }
-
-    public KhachThue getNguoiDungTen() {
-        return nguoiDungTen;
-    }
-    @Override //dòng này mới thêm
-    public void hienThi() { // dòng này mới thêm
-        System.out.println("Phong: " + maPhong + " (" + loaiPhong() + "), Gia: " + getGiaThue());
-    }
+    public void setGiaThue(double newPrice) { this.giaThue = newPrice; }
+    public void setTrangThai(Boolean tt) { this.trangThai = tt; }
+    public void setNguoiDungTen(KhachThue newUser) { this.nguoiDungTen = newUser; }
+    public void setHopDong(HopDong hp) { this.hopDong = hp; }
 }

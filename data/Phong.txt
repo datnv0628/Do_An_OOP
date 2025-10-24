@@ -1,0 +1,20 @@
+PG01,Phong co gac,5000000,true,Nguyen Van Dat,HD001
+PG02,Phong co gac,5000000,false
+PG03,Phong co gac,5000000,false
+PG04,Phong co gac,5000000,false
+PG05,Phong co gac,5000000,false
+PG06,Phong co gac,5000000,false
+PG07,Phong co gac,5000000,false
+PG08,Phong co gac,5000000,false
+PG09,Phong co gac,5000000,false
+PG10,Phong co gac,5000000,false
+P001,Phong khong co gac,4500000,false
+P002,Phong khong co gac,4500000,false
+P003,Phong khong co gac,4500000,false
+P004,Phong khong co gac,4500000,false
+P005,Phong khong co gac,4500000,false
+P006,Phong khong co gac,4500000,false
+P007,Phong khong co gac,4500000,false
+P008,Phong khong co gac,4500000,false
+P009,Phong khong co gac,4500000,false
+P010,Phong khong co gac,4500000,false
