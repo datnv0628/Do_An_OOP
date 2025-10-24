@@ -2,9 +2,9 @@ package src.model;
 
 import java.time.LocalDate;
 
-public interface IHienThi { // dòng này mới thêm
-    void hienThi();         // dòng này mới thêm
-}
+// public interface IHienThi { // dòng này mới thêm
+//     void hienThi();         // dòng này mới thêm
+// }
 
 public class HopDong implements IHienThi { //dòng này mới thêm
     private String maHopDong;
