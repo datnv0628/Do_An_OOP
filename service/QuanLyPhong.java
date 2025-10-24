@@ -64,12 +64,6 @@ public class QuanLyPhong {
                 KhachThue kh = p.getNguoiDungTen();
                 System.out.println("ten khach thue: " + kh.getTen());
             }
-
-            // Nếu muốn hiển thị hợp đồng
-            HopDong hd = p.getHopDong();
-            if (hd != null) {
-                System.out.println("Mã hợp đồng: " + hd.getMaHopDong());
-            }
         }
     }
 

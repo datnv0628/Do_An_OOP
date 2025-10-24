@@ -17,44 +17,15 @@ public abstract class Phong {
 
     public abstract String loaiPhong();
 
-    public String getMaPhong() {
-        return maPhong;
-    }
+    public String getMaPhong() { return maPhong; }
+    public Double getGiaThue() { return giaThue; }
+    public String getLoaiPhong() { return loaiPhong(); }
+    public KhachThue getNguoiDungTen() { return nguoiDungTen; }
+    public Boolean getTrangThai() { return trangThai; }
+    public HopDong getHopDong() { return hopDong; }
 
-    public Double getGiaThue() {
-        return giaThue;
-    }
-
-    public void setGiaThue(Double newPrice) {
-        this.giaThue = newPrice;
-    }
-
-    public String getLoaiPhong() {
-        return loaiPhong();
-    }
-
-    public KhachThue getNguoiDungTen() {
-        return nguoiDungTen;
-    }
-
-    public void setNguoiDungTen(KhachThue newUser) {
-        this.nguoiDungTen = newUser;
-    }
-
-    public Boolean getTrangThai() {
-        return trangThai;
-    }
-
-    public void setTrangThai(Boolean value) {
-        this.trangThai = value;
-    }
-
-    public HopDong getHopDong() {
-        return this.hopDong;
-    }
-
-    public void setHopDong(HopDong hp) {
-        this.hopDong = hopDong;
-    }
-
+    public void setGiaThue(double newPrice) { this.giaThue = newPrice; }
+    public void setTrangThai(Boolean tt) { this.trangThai = tt; }
+    public void setNguoiDungTen(KhachThue newUser) { this.nguoiDungTen = newUser; }
+    public void setHopDong(HopDong hp) { this.hopDong = hp; }
 }

@@ -2,7 +2,7 @@ package src.model;
 
 import java.time.LocalDate;
 
-public class HopDong {
+public class HopDong{
     private String maHopDong;
     private LocalDate Date;
     private KhachThue khachThue;
@@ -13,7 +13,4 @@ public class HopDong {
         this.Date = date;
         this.khachThue = kh;
     }
-
-    public String getMaHopDong() {return maHopDong; }
-    public void setMaHopDong(String maHD) {this.maHopDong = maHD; }
 }
