@@ -14,6 +14,6 @@ public class ChiTietHoaDon {
     }
 
     public double TinhDienNuocXe() {
-        return (GIA_DIEN * soDien) + GIA_NUOC + (soXe * 100000);
+        return (GIA_DIEN * soDien) + GIA_NUOC + (soXe * GIA_XE);
     }
 }

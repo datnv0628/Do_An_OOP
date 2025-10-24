@@ -1,10 +1,10 @@
 package src.model;
 
 public class PhongCoGac extends Phong {
-    private double phiCoGac = 500000;
+    // private double phiCoGac = 500000;
 
-    public PhongCoGac(String maPhong, double giaThue, KhachThue nguoiDungTen, HopDong hopDong) {
-        super(maPhong, giaThue,  hopDong, nguoiDungTen);
+    public PhongCoGac(String maPhong, double giaThue, Boolean trangThai, KhachThue nguoiDungTen, HopDong hopDong) {
+        super(maPhong, giaThue,  hopDong, trangThai, nguoiDungTen);
     }
 
     @Override
@@ -14,6 +14,6 @@ public class PhongCoGac extends Phong {
 
     @Override
     public Double getGiaThue() {
-        return super.getGiaThue() + phiCoGac;
+        return super.getGiaThue();
     }
 }

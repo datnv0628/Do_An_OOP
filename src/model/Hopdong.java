@@ -13,4 +13,7 @@ public class HopDong {
         this.Date = date;
         this.khachThue = kh;
     }
+
+    public String getMaHopDong() {return maHopDong; }
+    public void setMaHopDong(String maHD) {this.maHopDong = maHD; }
 }
