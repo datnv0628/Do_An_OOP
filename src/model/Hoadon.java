@@ -2,7 +2,11 @@ package src.model;
 
 import java.time.LocalDate;
 
-public class HoaDon {
+public interface IHienThi { //dòng này mới thêm
+    void hienThi();  //dòng này mới thêm
+}
+
+public class HoaDon implements IHienThi { //dòng này mới thêm
     private String maHoaDon;
     private LocalDate ngayHoaDon;
     private Phong phong;
@@ -26,5 +30,9 @@ public class HoaDon {
         System.out.println("Tien Thue: " + phong.getGiaThue());
         System.out.println("Tien dien/ nuoc/ xe: " + chiTietHoaDon.TinhDienNuocXe());
         System.out.println("Tong cong: " + tinhTongTien());
+    }
+    @Override
+    public void hienThi() { //dòng này mới thêm
+        hienThiHoaDon(); //dòng này mới thêm
     }
 }
