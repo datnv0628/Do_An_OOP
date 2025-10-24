@@ -22,7 +22,7 @@ public class HoaDon {
     public void hienThiHoaDon() {
         System.out.println("=== HOA DON ===");
         System.out.println("Phong: " + phong.getMaPhong() + " (" + phong.getLoaiPhong() + ")");
-        System.out.println("Nguoi thue: " + phong.getNguoiDungTen());
+        System.out.println("Nguoi thue: " + phong.getNguoiDungTen().getTen());
         System.out.println("Tien Thue: " + phong.getGiaThue());
         System.out.println("Tien dien/ nuoc/ xe: " + chiTietHoaDon.TinhDienNuocXe());
         System.out.println("Tong cong: " + tinhTongTien());

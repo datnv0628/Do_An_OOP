@@ -24,7 +24,16 @@ public class KhachThue extends Nguoi {
     public String getBienSoXe() {
         return bienSoXe;
     }
-    public Boolean getXe(){
+
+    public Boolean getXe() {
         return xe;
     }
+
+    // public void getNguoiDungTen() {
+    //     System.out.println("Ten khach hang: " + nguoiDungTen.getTen());
+    //     System.out.println("sdt: " + nguoiDungTen.getSdt());
+    //     if (nguoiDungTen.getXe()) {
+    //         System.out.println("Bien so xe: " + nguoiDungTen.getBienSoXe());
+    //     }
+    // }
 }
