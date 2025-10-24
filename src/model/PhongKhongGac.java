@@ -8,6 +8,6 @@ public class PhongKhongGac extends Phong {
 
     @Override
     public String loaiPhong() {
-        return "Phòng không gác";
+        return "Phong khong gac";
     }
 }

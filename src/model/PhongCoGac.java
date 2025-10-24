@@ -9,7 +9,7 @@ public class PhongCoGac extends Phong {
 
     @Override
     public String loaiPhong() {
-        return "Phòng có gác";
+        return "Phong co gac";
     }
 
     @Override
